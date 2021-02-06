@@ -22,10 +22,10 @@ public class App
  ChromeOptions chromeOptions = new ChromeOptions();
  chromeOptions.addArguments("--headless");
  
- System.out.println("Hi, Welcome to Demo on Selenium WebDriver");
-
  WebDriver driver = new ChromeDriver(chromeOptions);
  driver.get("http://13.232.78.63:8888/");
+  
+ System.out.println("Hi, Welcome to Demo on Selenium WebDriver");
 
  driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
  driver.findElement(By.className("v-button")).click();
