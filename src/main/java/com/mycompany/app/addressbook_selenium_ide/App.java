@@ -20,12 +20,11 @@ public class App
  System.out.println("Hi, Welcome");
  System.setProperty("webdriver.chrome.driver","/home/ubuntu/selenium/chromedriver");
  ChromeOptions chromeOptions = new ChromeOptions();
- WebDriver driver = new ChromeDriver(chromeOptions);
- 
  chromeOptions.addArguments("--headless");
+ 
  System.out.println("Hi, Welcome to Demo on Selenium WebDriver");
 
-
+ WebDriver driver = new ChromeDriver(chromeOptions);
  driver.get("http://35.154.221.98:8888/");
 
  driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
