@@ -17,8 +17,6 @@ public class App
 
  public static void main(String[] args) {
 
-
- //System.setProperty("webdriver.chrome.driver","C:\\Users\\japat\\chromedriver.exe");
  System.out.println("Hi, Welcome");
  System.setProperty("webdriver.chrome.driver","/home/ubuntu/selenium/chromedriver");
  ChromeOptions chromeOptions = new ChromeOptions();
@@ -28,7 +26,7 @@ public class App
  System.out.println("Hi, Welcome to Demo on Selenium WebDriver");
 
 
- driver.get("http://13.233.53.215:8888/");
+ driver.get("http://35.154.221.98:8888/");
 
  driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
  driver.findElement(By.className("v-button")).click();
