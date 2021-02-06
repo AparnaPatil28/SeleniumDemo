@@ -25,7 +25,7 @@ public class App
  System.out.println("Hi, Welcome to Demo on Selenium WebDriver");
 
  WebDriver driver = new ChromeDriver(chromeOptions);
- driver.get("http://35.154.221.98:8888/");
+ driver.get("http://13.232.78.63:8888/");
 
  driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
  driver.findElement(By.className("v-button")).click();
