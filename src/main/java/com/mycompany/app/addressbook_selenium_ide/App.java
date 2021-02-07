@@ -23,7 +23,7 @@ public class App
  chromeOptions.addArguments("--headless");
  
  WebDriver driver = new ChromeDriver(chromeOptions);
- driver.get("http://13.232.78.63:8888/");
+ driver.get("http://3.6.38.224:8888/");
   
  System.out.println("Hi, Welcome to Demo on Selenium WebDriver");
 
