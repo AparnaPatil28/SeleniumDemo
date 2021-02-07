@@ -20,13 +20,14 @@ public class App
  System.out.println("Hi, Welcome");
  System.setProperty("webdriver.chrome.driver","/home/ubuntu/selenium/chromedriver");
  ChromeOptions chromeOptions = new ChromeOptions();
- chromeOptions.addArguments("--headless");
- 
  WebDriver driver = new ChromeDriver(chromeOptions);
- driver.get("http://3.6.38.224:8888/");
+  
+ chromeOptions.addArguments("--headless");
   
  System.out.println("Hi, Welcome to Demo on Selenium WebDriver");
 
+ driver.get("http://3.6.38.224:8888/");
+   
  driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
  driver.findElement(By.className("v-button")).click();
  driver.findElement(By.id("gwt-uid-5")).sendKeys("Aparna");
